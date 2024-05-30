@@ -17,11 +17,36 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
 }
+ul{
+    list-style-type: none;
+    margin: opx;
+    padding: 0px;
+    background-color: black;
+}
 
-nav {
+li {
+    text-align: left;
+    float: left;
+    padding: 2px;
+    margin: 2px;
+}
+
+a {
+    display:inline;
+    background-color: black;
+    color: seashell;
+
+}
+
+#navbar{
+    display: ;
+
+
+}
+/*nav {
     text-align: center;
     margin: 20px 0;
-}
+}*/
 
 nav button {
     background-color: #4CAF50;
@@ -68,6 +93,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    border-top: #333, 1px;
 }
 
 .profile-info {
