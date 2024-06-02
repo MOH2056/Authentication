@@ -3,91 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YETIE - Landing Page</title>
+    <title>YETIT - Landing Page</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <style>
-        body {
-            padding: 60px 0;
+        html, body {
+            height: 100%;
         }
-
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        #nav {
+            margin-bottom: 20px;
+        }
+        #intro {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background-image: url("images/new1.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: left;
+            padding: 60px;
+        }
+        #intro .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        #about {
+            font-size: 20px;
+            font-family: cursive;
+        }
         #footer {
-            position: fixed;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+    <nav id="nav" class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-xxl">
-          <!-- navbar brand / title -->
-          <a class="navbar-brand" href="#intro">
-            <span class="text-secondary fw-bold">
-              <i class="bi bi-book-half"></i>
-              YETIT - Student Portal
-            </span>
-          </a>
-          <!-- toggle button for mobile nav -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <!-- navbar links -->
-          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="profile.html">Dashboard</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="register.html">Register</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                  </li>
-                  <li class="nav-item d-md-none">
-                    <a class="nav-link" href="about.html">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
-                  </li>            
-              
-            </ul>
-          </div>
+            <!-- navbar brand / title -->
+            <a class="navbar-brand" href="index.html">
+                <span class="text-secondary fw-bold">
+                    <i class="bi bi-book-half"></i>
+                    YETIT - Student Portal
+                </span>
+            </a>
+            <!-- toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <!-- About Section -->
+    <!-- Home Body -->
     <section class="bg-light">
         <div class="container">
           <div class="text-center">
-            <h2>Stay in The Loop</h2>
-            <p class="lead">Get the latest updates as they happen...</p>
+            <h2>About YETIT</h2>
           </div>
           <div class="row justify-content-center">
             <div class="col-md-8 text-center">
-              <p class="text-muted my-4">
+              <p id="about" class="text-muted my-4">
                 At YETIT, we offer a diverse range of programs designed to equip
                 our students with the knowledge and skills necessary to thrive 
                 in the rapidly evolving tech landscape.
                 Our curriculum is meticulously crafted to blend theoretical 
                 foundations with practical, hands-on experiences,
                 ensuring our graduates are well-prepared to tackle real-world challenges.<br>
-                
+                <br>
                 Our state-of-the-art facilities, combined with a
                 faculty of renowned experts and industry professionals, 
                 provide an unparalleled learning environment. 
                 We emphasize a collaborative approach to learning, encouraging 
                 students to engage in interdisciplinary projects
                 and research that push the boundaries of technology.<br>
-                
+                <br>
                 Beyond academics, YETIT is a vibrant community where students 
                 can grow both personally and professionally.
                 We offer numerous opportunities for networking, internships, 
                 and career development, fostering connections that last a lifetime.<br>
-                
+                <br>
                 Join us at Yetunde Tapere Institute of Technology 
                 and be a part of a dynamic institution that is shaping 
                 he future of technology. Whether you are an aspiring engineer, 
@@ -95,18 +123,75 @@
                 or a future tech entrepreneur, YETIT is the place where your
                 aspirations can become a reality.<br>
               </p>
-              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
-                Register for Updates
-              </button>
             </div>
           </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container-lg">
+          
+          <div class="text-center">
+            <h2>Get in Touch</h2>
+            <p class="lead">Questions to ask? Fill out the form to contact us directly...</p>
+          </div>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+              
+              <form>
+                <label for="email" class="form-label">Email address:</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill text-secondary"></i>
+                  </span>
+                  <input type="text" id="email" class="form-control" placeholder="e.g. mario@example.com" />
+                  <!-- tooltip -->
+                  <span class="input-group-text">
+                    <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
+                </div>
+                <label for="name" class="form-label">Name:</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill text-secondary"></i>
+                  </span>
+                  <input type="text" id="name" class="form-control" placeholder="e.g. Mario" />
+                  <!-- tooltip -->
+                  <span class="input-group-text">
+                    <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
+                </div>
+                <label for="subject" class="form-label">FAQ</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-chat-right-dots-fill text-secondary"></i>
+                  </span>
+                  <select class="form-select" id="subject">
+                    <option value="pricing" selected>Pricing query</option>
+                    <option value="content">Content query</option>
+                    <option value="other">Other query</option>
+                  </select>
+                </div>
+                <div class="mb-4 mt-5 form-floating">
+                  <textarea class="form-control" id="query" style="height: 140px" placeholder="query"></textarea>
+                  <label for="query">Your query...</label>
+                </div>
+                <div class="mb-4 text-center">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    
     <!-- Fixed Footer -->
-    <footer id="footer" class="border-top">
+    <footer id="footer" class="bg-light mt-auto">
         <p>&copy; 2024 Yetunde Tapere Institute of Technology. All rights reserved.</p>
     </footer>
-
     <!-- Bootstrap 5 JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
