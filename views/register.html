@@ -13,6 +13,8 @@
         body {
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
         }
         #nav {
             margin-bottom: 20px;
@@ -20,10 +22,10 @@
         #intro {
             flex: 1;
             display: flex;
-            /*flex-direction: column;*/
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            background-image: url("images/new1.jpg");
+            align-items: flex-start;
+            background-image: url("../styles/images/new1.jpg");
             background-size: cover;
             background-position: center;
             color: white;
@@ -35,6 +37,40 @@
             padding: 30px;
             border-radius: 10px;
             max-width: 800px;
+        }
+        .register-section {
+            /*background-color: white;*/
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .register-section h2 {
+            margin-bottom: 20px;
+        }
+        .register-section form {
+            max-width: 600px;
+        }
+        .register-section form label {
+            font-weight: bold;
+        }
+        .register-section form input {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .register-section form button {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .register-section form button:hover {
+            background-color: #5a6268;
         }
         #footer {
             text-align: center;
@@ -80,7 +116,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
-                    
                 </ul>
             </div>
         </div>
@@ -89,18 +124,20 @@
     <section id="intro" class="container-fluid">
         <div class="container">
             <div class="content">
-                <h1 class="display-3 fw-bold text-white">Yetunde Tapere Institute of Technology (YETIT)</h1>
-                <p class="h4 text-muted fw-bold"><small>...empowering you with tools for the future</small></p>
-                <p class="lead my-4 text-white fw-bold">
-                    Welcome to Yetunde Tapere Institute of Technology (YETIT), a premier institution dedicated to fostering innovation, excellence, 
-                    and leadership in the field of technology. Established with the vision of creating a hub for cutting-edge research and top-tier education,
-                    YETIT is committed to shaping the next generation of tech leaders and innovators.
-                </p>
-                <a href="register.html" class="btn btn-secondary btn-lg">Register Now</a>
-                <p class="mt-3">
-                    Already have an account?
-                    <a href="login.html" class="text-white fw-bold">Login to your dashboard</a>
-                </p>
+                <section class="register-section">
+                    <h2>Register</h2>
+                    <form action="profile.html" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required><br>
+                        <label for="class">Class:</label>
+                        <input type="text" id="class" name="class" required><br>
+                        <label for="major">Major:</label>
+                        <input type="text" id="major" name="major" required><br>
+                        <button type="submit">Register</button>
+                    </form>
+                </section>
             </div>
         </div>
     </section>
